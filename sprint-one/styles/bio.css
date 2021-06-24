@@ -1,0 +1,91 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #323232;
+}
+
+.header__logo {
+  background-color: #000000;
+  width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.header__ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.header-page {
+  width: 50%;
+  text-align: center;
+  padding: 8px;
+}
+.header-page--styles {
+  border-bottom: 4px solid white;
+}
+
+.section-title {
+  background-image: url(../assets/images/hero-bio.jpg);
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.article__main {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.article__images {
+  width: 100%;
+}
+.article__parah {
+  font-weight: 600;
+}
+.article__header {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.article__description {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.article__description2 {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.main-gallery {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.main__photo {
+  width: 100%;
+}/*# sourceMappingURL=bio.css.map */
