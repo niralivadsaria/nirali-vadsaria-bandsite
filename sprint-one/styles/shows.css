@@ -13,11 +13,11 @@ body {
 
 .header {
   background-color: #323232;
-}
-.header__logo {
-  background-color: #000000;
-  width: 100%;
-  margin-left: 5%;
+  /*&__logo {
+    background-color: $footer-background;
+    width: 100%;
+    margin-left: 5%;
+  }*/
 }
 .header__nav {
   display: flex;
@@ -54,12 +54,12 @@ body {
   width: 100%;
 }
 @media (min-width: 768px) {
-  .header__ul {
+  .header {
     flex-direction: row;
   }
 }
 @media (min-width: 1280px) {
-  .header__ul {
+  .header {
     flex-direction: row;
   }
 }
@@ -73,150 +73,218 @@ body {
 }
 
 .section-title {
-  background-image: url(../assets/images/hero-bio.jpg);
+  background-image: url(../assets/images/Photo-gallery-3.jpg);
   background-size: cover;
-  height: 300px;
+  height: 50vw;
+  width: 100vw;
   display: flex;
   align-items: center;
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
   font-family: "Avenir next";
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   .section-title {
-    font-size: 3.75rem;
-    line-height: 68px;
-    font-weight: 700;
-    font-family: "Avenir next";
-    height: 400px;
+    display: flex;
+    align-items: left;
   }
 }
 @media (min-width: 1280px) {
   .section-title {
-    font-size: 60px;
-    line-height: 68px;
-    font-weight: 700;
-    font-family: "Avenir next";
-    height: 600px;
-  }
-}
-
-.article__main {
-  font-size: 20px;
-  line-height: 22px;
-  font-weight: 600;
-}
-@media (min-width: 768px) {
-  .article__main {
-    font-size: 35px;
-    line-height: 32px;
-    font-weight: 600;
-  }
-}
-@media (min-width: 1280px) {
-  .article__main {
-    font-size: 35px;
-    line-height: 32px;
-    font-weight: 600;
-  }
-}
-.article__images {
-  width: 100%;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-.article__parah {
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 700;
-  font-family: "Avenir next";
-  margin-left: 5%;
-}
-@media (min-width: 768px) {
-  .article__parah {
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 700;
-    font-family: "Avenir next";
-    margin-left: 5%;
-  }
-}
-@media (min-width: 1280px) {
-  .article__parah {
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 700;
-    font-family: "Avenir next";
-    margin-left: 5%;
-  }
-}
-.article__header {
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 600;
-  font-family: "Avenir next";
-  margin-left: 5%;
-}
-
-@media (min-width: 768px) {
-  .description {
     display: flex;
-    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading__title {
+    font-size: 40px;
   }
 }
 @media (min-width: 1280px) {
-  .description {
-    display: flex;
-    justify-content: space-around;
+  .heading__title {
+    font-size: 40px;
+    margin-top: 5%;
   }
 }
-.description__paragraph {
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  font-family: "Avenir next";
-  margin-left: 5%;
+
+@media (min-width: 768px) {
+  .title__band {
+    margin-top: 5%;
+    margin-right: 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .title__band {
+    margin-top: 5%;
+    margin-right: 50%;
+  }
 }
 
-.main-gallery {
+.iframe__sound {
+  width: 90%;
+  height: 30%;
+  margin-top: 5%;
+}
+@media (min-width: 768px) {
+  .iframe__sound {
+    width: 90%;
+    height: 40%;
+    margin-top: 5%;
+  }
+}
+@media (min-width: 1280px) {
+  .iframe__sound {
+    width: 40%;
+    height: 30%;
+    margin-left: 50%;
+  }
+}
+
+.article {
   font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
+  font-weight: 700px;
   font-family: "Avenir next";
-  margin-left: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
+.shows {
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+}
+.shows__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #e1e1e1;
+  padding-left: 16px;
+}
 @media (min-width: 768px) {
-  .gallery {
+  .shows__main {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around;
+    width: 100%;
+  }
+  .shows__main--labels {
+    border-bottom: none;
   }
 }
 @media (min-width: 1280px) {
-  .gallery {
+  .shows__main {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around;
+    width: 100%;
+  }
+  .shows__main--labels {
+    border-bottom: none;
   }
 }
-.gallery__photo {
-  width: 300px;
+.shows__date {
+  font-size: 14px;
+  color: #afafaf;
+  font-weight: 600;
+  font-family: "Avenir next";
+  margin-top: 5%;
 }
 @media (min-width: 768px) {
-  .gallery__photo {
-    width: 30%;
-    padding-bottom: 24px;
+  .shows__date {
+    display: none;
+    width: 25%;
   }
 }
+@media (min-width: 1280px) {
+  .shows__date {
+    display: none;
+    width: 25%;
+  }
+}
+.shows__venue {
+  font-size: 14px;
+  color: #afafaf;
+  font-weight: 600;
+  font-family: "Avenir next";
+}
 @media (min-width: 768px) {
-  .gallery__photo {
-    width: 30%;
+  .shows__venue {
+    display: none;
+    width: 25%;
+  }
+}
+@media (min-width: 1280px) {
+  .shows__venue {
+    display: none;
+    width: 25%;
+  }
+}
+.shows__location {
+  font-size: 14px;
+  color: #afafaf;
+  font-weight: 600;
+  font-family: "Avenir next";
+}
+@media (min-width: 768px) {
+  .shows__location {
+    display: none;
+    width: 25%;
+  }
+}
+@media (min-width: 1280px) {
+  .shows__location {
+    display: none;
+    width: 25%;
+  }
+}
+.shows__info {
+  font-size: 10px;
+  color: black;
+  font-weight: 700;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  width: 25%;
+}
+.shows__button {
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  color: white;
+}
+
+.tablet__page {
+  font-size: 14px;
+  color: #afafaf;
+  font-weight: 600;
+  font-family: "Avenir next";
+  margin-top: 5%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .tablet__page {
+    width: 25%;
+    display: block;
+    padding-right: 10%;
+    text-align: left;
+  }
+  .tablet__page:last-child {
+    width: 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .tablet__page {
+    width: 25%;
+    display: block;
+    padding-right: 10%;
+    text-align: left;
+    padding-left: 24px;
+  }
+  .tablet__page:last-child {
+    width: 50vw;
   }
 }
 
@@ -303,4 +371,4 @@ body {
   .header-logo--bandsite {
     display: none;
   }
-}/*# sourceMappingURL=bio.css.map */
+}/*# sourceMappingURL=shows.css.map */

@@ -15,11 +15,11 @@ body {
 .header {
   background-color: #323232;
 
-  &__logo {
+  /*&__logo {
     background-color: $footer-background;
     width: 100%;
     margin-left: 5%;
-  }
+  }*/
 
   &__nav {
     display: flex;
@@ -51,14 +51,14 @@ body {
     display: flex;
     list-style: none;
     width: 100%;
-
-    @include tablet {
-      flex-direction: row;
-    }
-    @include desktop {
-      flex-direction: row;
-    }
   }
+  @include tablet {
+    flex-direction: row;
+  }
+  @include desktop {
+    flex-direction: row;
+  }
+
   &-page {
     width: 50%;
     text-align: center;
@@ -70,135 +70,207 @@ body {
   }
 }
 .section-title {
-  background-image: url(../assets/images/hero-bio.jpg);
+  background-image: url(../assets/images/Photo-gallery-3.jpg);
   background-size: cover;
-  height: 300px;
+  height: 50vw;
+  width: 100vw;
   display: flex;
   align-items: center;
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
   font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+  // margin-top: 5%;
 
   @include tablet {
-    font-size: 3.75rem;
-    line-height: 68px;
-    font-weight: 700;
-    font-family: $font-family;
-    height: 400px;
+    display: flex;
+    align-items: left;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.heading__title {
+  @include tablet {
+    font-size: 40px;
+  }
+
+  @include desktop {
+    font-size: 40px;
+    margin-top: 5%;
+  }
+}
+
+.title__band {
+  @include tablet {
+    margin-top: 5%;
+    margin-right: 50%;
+  }
+
+  @include desktop {
+    margin-top: 5%;
+    margin-right: 50%;
+  }
+}
+
+.iframe__sound {
+  width: 90%;
+  height: 30%;
+  margin-top: 5%;
+  @include tablet {
+    width: 90%;
+    height: 40%;
+    margin-top: 5%;
   }
   @include desktop {
-    font-size: 60px;
-    line-height: 68px;
-    font-weight: 700;
-    font-family: $font-family;
-    height: 600px;
+    width: 40%;
+    height: 30%;
+
+    margin-left: 50%;
   }
 }
 .article {
-  &__main {
-    font-size: 20px;
-    line-height: 22px;
-    font-weight: 600;
-
-    @include tablet {
-      font-size: 35px;
-      line-height: 32px;
-      font-weight: 600;
-    }
-    @include desktop {
-      font-size: 35px;
-      line-height: 32px;
-      font-weight: 600;
-    }
-  }
-
-  &__images {
-    width: 100%;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-
-  &__parah {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 700;
-    font-family: $font-family;
-    margin-left: 5%;
-
-    @include tablet {
-      font-size: 14px;
-      line-height: 22px;
-      font-weight: 700;
-      font-family: $font-family;
-      margin-left: 5%;
-    }
-    @include desktop {
-      font-size: 14px;
-      line-height: 22px;
-      font-weight: 700;
-      font-family: $font-family;
-      margin-left: 5%;
-    }
-  }
-  &__header {
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
-    font-family: $font-family;
-    margin-left: 5%;
-  }
-}
-
-.description {
-  @include tablet {
-    display: flex;
-    justify-content: space-around;
-  }
-  @include desktop {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  &__paragraph {
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
-    font-family: $font-family;
-    margin-left: 5%;
-  }
-}
-.main-gallery {
   font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
+  font-weight: 700px;
   font-family: $font-family;
-  margin-left: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.gallery {
-  @include tablet {
+
+.shows {
+  // margin: 0px;
+  // padding: 0px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+
+  &__main {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around;
-  }
-  @include desktop {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-content: space-around;
-  }
-  &__photo {
-    width: 300px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-left: 16px;
 
     @include tablet {
-      width: 30%;
-      padding-bottom: 24px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+
+      &--labels {
+        border-bottom: none;
+      }
     }
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+
+      &--labels {
+        border-bottom: none;
+      }
+    }
+  }
+  &__date {
+    font-size: 14px;
+    color: #afafaf;
+    font-weight: 600;
+    font-family: $font-family;
+    margin-top: 5%;
+
     @include tablet {
-      width: 30%;
+      display: none;
+      width: 25%;
+    }
+    @include desktop {
+      display: none;
+      width: 25%;
+    }
+  }
+
+  &__venue {
+    font-size: 14px;
+    color: #afafaf;
+    font-weight: 600;
+    font-family: $font-family;
+
+    @include tablet {
+      display: none;
+      width: 25%;
+    }
+
+    @include desktop {
+      display: none;
+      width: 25%;
+    }
+  }
+  &__location {
+    font-size: 14px;
+    color: #afafaf;
+    font-weight: 600;
+    font-family: $font-family;
+
+    @include tablet {
+      display: none;
+      width: 25%;
+    }
+
+    @include desktop {
+      display: none;
+      width: 25%;
+    }
+  }
+
+  &__info {
+    font-size: 10px;
+    color: black;
+    font-weight: 700;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    width: 25%;
+  }
+  &__button {
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    color: white;
+  }
+}
+
+.tablet__page {
+  font-size: 14px;
+  color: #afafaf;
+  font-weight: 600;
+  font-family: $font-family;
+  margin-top: 5%;
+  display: none;
+
+  @include tablet {
+    width: 25%;
+    display: block;
+    padding-right: 10%;
+    text-align: left;
+
+    &:last-child {
+      width: 50%;
+    }
+  }
+
+  @include desktop {
+    width: 25%;
+    display: block;
+    padding-right: 10%;
+    text-align: left;
+    padding-left: 24px;
+    &:last-child {
+      width: 50vw;
     }
   }
 }

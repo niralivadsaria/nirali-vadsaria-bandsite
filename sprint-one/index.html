@@ -118,6 +118,27 @@
         </section>
       </article>
     </main>
+    <section class="comment">
+      <h2 class="comment__header">Join the conversation</h2>
+      <div class="comment__avatar"></div>
+      <form class="comments__form">
+        <div class="label__styles">
+          <label class="comment__label"> Name </label>
+          <input placeholder="Enter your name" class="comment__name" name />
+        </div>
+        <div class="label__styles">
+          <label class="comment__label"> Comment </label>
+          <input
+            placeholder="Add your Comment"
+            class="comment__details"
+            comment
+          />
+        </div>
+        <button class="comment__button">Comment</button>
+      </form>
+      <article class="display__comments"></article>
+    </section>
+
     <footer class="footer">
       <section class="section__line">
         <h4 class="footer__header">Get In Touch</h4>
@@ -184,5 +205,6 @@
         Copyright The Bees Knees © 2021 All Rights Reserved
       </p>
     </footer>
+    <script src="../scripts/index-page.js"></script>
   </body>
 </html>
