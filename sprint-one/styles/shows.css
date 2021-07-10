@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-Demi.otf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("../assets/fonts/AvenirNextLTPro-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
 *,
 *:before,
 *:after {
@@ -25,7 +43,7 @@ body {
   flex-direction: column;
   width: 300px;
   justify-content: center;
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
   font-size: 0.625rem;
   font-weight: 700;
   margin-left: 10%;
@@ -35,7 +53,7 @@ body {
     flex-direction: row;
     font-size: 0.75rem;
     font-weight: 700;
-    font-family: "Avenir next";
+    font-family: "Avenir Next LT Pro";
     margin-left: 5%;
     margin-right: 10%;
   }
@@ -45,7 +63,7 @@ body {
     flex-direction: row;
     font-size: 0.75rem;
     font-weight: 700;
-    font-family: "Avenir next";
+    font-family: "Avenir Next LT Pro";
   }
 }
 .header__ul {
@@ -82,7 +100,7 @@ body {
   color: white;
   font-size: 1.5rem;
   font-weight: 700;
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
   display: flex;
   flex-direction: column;
 }
@@ -146,7 +164,7 @@ body {
 .article {
   font-size: 24px;
   font-weight: 700px;
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -189,7 +207,7 @@ body {
   font-size: 14px;
   color: #afafaf;
   font-weight: 600;
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
   margin-top: 5%;
 }
 @media (min-width: 768px) {
@@ -208,7 +226,7 @@ body {
   font-size: 14px;
   color: #afafaf;
   font-weight: 600;
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
 }
 @media (min-width: 768px) {
   .shows__venue {
@@ -226,7 +244,7 @@ body {
   font-size: 14px;
   color: #afafaf;
   font-weight: 600;
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
 }
 @media (min-width: 768px) {
   .shows__location {
@@ -260,7 +278,7 @@ body {
   font-size: 14px;
   color: #afafaf;
   font-weight: 600;
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
   margin-top: 5%;
   display: none;
 }
@@ -289,7 +307,7 @@ body {
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #323232;
 }
 .footer__header {
   font-size: 30px;
@@ -298,7 +316,7 @@ body {
   color: white;
   padding-left: 5%;
   margin-bottom: 10%;
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
   margin-top: 10%;
   margin-left: 5%;
 }
@@ -316,20 +334,20 @@ body {
 
 .info__name {
   color: white;
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
   font-weight: 400;
   margin-left: 5%;
   margin-top: 5%;
 }
 .info__parah {
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
   font-weight: 400;
   font-size: 13px;
   margin-left: 5%;
   color: white;
 }
 .info__inparah {
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
   font-weight: 400;
   font-size: 13px;
   margin-left: 5%;
@@ -345,7 +363,7 @@ body {
 }
 
 .footer__parah {
-  font-family: "Avenir next";
+  font-family: "Avenir Next LT Pro";
   font-weight: 400;
   font-size: 13px;
   margin-left: 5%;
